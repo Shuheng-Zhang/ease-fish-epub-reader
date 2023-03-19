@@ -8,14 +8,12 @@ const args = process.argv.slice(1),
 
 function createWindow(): BrowserWindow {
 
-  const size = screen.getPrimaryDisplay().workAreaSize;
-
   // Create the browser window.
   win = new BrowserWindow({
-    x: 0,
-    y: 0,
-    width: size.width,
-    height: size.height,
+    minWidth: 240,
+    minHeight: 320,
+    width: 240,
+    height: 320,
     webPreferences: {
       nodeIntegration: true,
       allowRunningInsecureContent: (serve),
