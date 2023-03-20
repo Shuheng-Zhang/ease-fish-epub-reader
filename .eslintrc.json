@@ -27,6 +27,7 @@
       "rules": {
         "prefer-arrow/prefer-arrow-functions": 0,
         "@angular-eslint/directive-selector":  0,
+        "no-trailing-spaces": 0,
         "@angular-eslint/component-selector": [
           "error",
           {
