@@ -1,0 +1,5 @@
+<div class="container-wrapper">
+  <div class="line-wrapper" *ngFor="let item of lineItems; let i = index">
+    <div class="line-item" *ngFor="let _ of item; let ii = index" [divId]="'line-item-' + i + '-' + ii"></div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+.container-wrapper {
+  width: 98px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #c7c7c7;
+  border-radius: 5px;
+
+  .line-wrapper {
+    width: 48px;
+    height: 95%;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-right: 1px solid #c7c7c7;
+    border-left: 1px solid #c7c7c7;
+    overflow: hidden;
+
+    .line-item {
+      border: 1px solid #c7c7c7;
+      margin-left: 3px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+
+      animation-name: lineLoading0;
+      animation-duration: 500ms;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes lineLoading0 {
+  0% {
+    width: 1%;
+
+  }
+  25% {
+    width: 25%
+  }
+  50% {
+    width: 50%
+  }
+  75% {
+    width: 75%
+  }
+  100% {
+    width: 80%
+  }
+}
